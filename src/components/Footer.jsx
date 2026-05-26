@@ -36,11 +36,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer__brand">
             <div className="footer__logo">
-              <img src="/tmt-logo.png" alt="TMT Logo" className="footer__logo-img" />
-              <div>
-                <span className="footer__logo-name">THE MIRACLE</span>
-                <span className="footer__logo-sub">TUTORIAL</span>
-              </div>
+              <img src="https://i.ibb.co/Kx3qs5c8/Whats-App-Image-2026-05-14-at-8-23-40-PM.jpg" alt="TMT Logo" className="footer__logo-img" style={{ height: '70px', width: 'auto' }} />
             </div>
             <p className="footer__brand-desc">
               Premier coaching institute for JEE, NEET, Foundation Courses, NTSE & Olympiad preparation.
@@ -94,12 +90,7 @@ export default function Footer() {
               <p>📍 Phase 2, Dumduma, Near SBI<br />Bhubaneswar, Odisha – 751019</p>
               <p>🕒 Mon – Sat: 7:00 AM – 8:00 PM</p>
             </address>
-            <button
-              className="footer__apply-btn btn btn-primary"
-              onClick={() => scrollTo('admission')}
-            >
-              Apply Now →
-            </button>
+
           </div>
         </div>
       </div>

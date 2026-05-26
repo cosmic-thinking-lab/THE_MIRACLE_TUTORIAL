@@ -16,8 +16,8 @@ const galleryItems = [
   { id: 3, category: 'support', title: 'Online Resources', desc: 'Access to digital learning materials, tests, and practice platforms.', image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=800', icon: '💻', color: '#059669' },
   { id: 4, category: 'support', title: 'Counseling Services', desc: 'Career guidance and stress management support for students.', image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800', icon: '👥', color: '#ea580c' },
   { id: 5, category: 'support', title: 'Study Material', desc: 'Comprehensive notes and updated study guides for all courses.', image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=800', icon: '📚', color: '#db2777' },
-  { id: 6, category: 'support', title: 'Mock Tests', desc: 'Weekly and monthly mock exams to improve exam readiness.', image: 'https://images.unsplash.com/photo-1484941959180-c1f96e969ec0?q=80&w=800', icon: '📝', color: '#4f46e5' },
-  
+  { id: 6, category: 'support', title: 'Mock Tests', desc: 'Weekly and monthly mock exams to improve exam readiness.', image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=800', icon: '📝', color: '#4f46e5' },
+
   // Coaching Policies
   { id: 7, category: 'policies', title: 'Attendance Discipline', desc: 'Students are encouraged to attend all classes regularly.', image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800', icon: '📅', color: '#0d9488' },
   { id: 8, category: 'policies', title: 'Code of Conduct', desc: 'Maintaining mutual respect among students and faculty.', image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800', icon: '🤝', color: '#1a237e' },
@@ -90,7 +90,7 @@ export default function Gallery() {
 
         {/* Gallery Content */}
         <div className="gallery__content">
-          
+
           {/* Support Services Section */}
           <div className="gallery__category-section">
             <div className="gallery__sub-header reveal">

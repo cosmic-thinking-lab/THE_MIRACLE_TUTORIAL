@@ -52,11 +52,7 @@ export default function Navbar() {
           {/* Logo */}
           <button className="navbar__logo" onClick={() => scrollTo('home')} aria-label="Go to home">
             <div className="logo-icon">
-              <img src="/tmt-logo.png" alt="TMT Logo" className="logo-img" />
-            </div>
-            <div className="logo-text">
-              <span className="logo-name">THE MIRACLE</span>
-              <span className="logo-sub">TUTORIAL</span>
+              <img src="https://i.ibb.co/Kx3qs5c8/Whats-App-Image-2026-05-14-at-8-23-40-PM.jpg" alt="TMT Logo" className="logo-img" style={{ height: '56px', width: 'auto' }} />
             </div>
           </button>
 
@@ -75,10 +71,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* CTA */}
-          <button className="navbar__cta btn btn-primary" onClick={() => scrollTo('contact')}>
-            Apply Now
-          </button>
+
 
           {/* Hamburger */}
           <button
@@ -104,11 +97,7 @@ export default function Navbar() {
               </button>
             </li>
           ))}
-          <li style={{ animationDelay: '0.45s' }}>
-            <button className="btn btn-primary mobile-cta" onClick={() => scrollTo('contact')}>
-              Apply Now
-            </button>
-          </li>
+
         </ul>
       </div>
     </>
