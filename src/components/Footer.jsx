@@ -43,8 +43,8 @@ export default function Footer() {
               Empowering students to achieve their dreams since our founding.
             </p>
             <div className="footer__contact-quick">
+              <a href="tel:+919938669552">📞 9938669552</a>
               <a href="tel:+916370324756">📞 6370324756</a>
-              <a href="tel:+916371809622">📞 6371809622</a>
               <a href="mailto:www.themiracletutorial@gmail.com">✉️ www.themiracletutorial@gmail.com</a>
             </div>
           </div>

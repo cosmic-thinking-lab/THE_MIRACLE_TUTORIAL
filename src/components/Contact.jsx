@@ -19,8 +19,8 @@ const contactInfo = [
       </svg>
     ),
     label: 'Phone',
-    value: '6370324756, 6371809622',
-    link: 'tel:+916370324756',
+    value: '9938669552, 6370324756',
+    link: 'tel:+919938669552',
   },
   {
     icon: (

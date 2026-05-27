@@ -66,7 +66,7 @@ export default function Hero() {
         {/* Badge */}
         <div className="hero__badge animate-fadeInUp delay-1">
           <span className="badge-dot" />
-          Admissions Open 2025–26
+          Admissions Open 2026–27
         </div>
 
         {/* Headline */}
