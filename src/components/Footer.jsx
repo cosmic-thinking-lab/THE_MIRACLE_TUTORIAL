@@ -36,7 +36,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer__brand">
             <div className="footer__logo">
-              <img src="https://i.ibb.co/Kx3qs5c8/Whats-App-Image-2026-05-14-at-8-23-40-PM.jpg" alt="TMT Logo" className="footer__logo-img" style={{ height: '70px', width: 'auto' }} />
+              <img src="https://i.ibb.co/DHhHr6Lm/tmt-logo.png" alt="TMT Logo" className="footer__logo-img" style={{ height: '70px', width: 'auto' }} />
             </div>
             <p className="footer__brand-desc">
               Premier coaching institute for JEE, NEET, Foundation Courses, NTSE & Olympiad preparation.

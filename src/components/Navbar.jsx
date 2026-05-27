@@ -52,7 +52,7 @@ export default function Navbar() {
           {/* Logo */}
           <button className="navbar__logo" onClick={() => scrollTo('home')} aria-label="Go to home">
             <div className="logo-icon">
-              <img src="https://i.ibb.co/Kx3qs5c8/Whats-App-Image-2026-05-14-at-8-23-40-PM.jpg" alt="TMT Logo" className="logo-img" style={{ height: '56px', width: 'auto' }} />
+              <img src="https://i.ibb.co/DHhHr6Lm/tmt-logo.png" alt="TMT Logo" className="logo-img" style={{ height: '56px', width: 'auto' }} />
             </div>
           </button>
 
