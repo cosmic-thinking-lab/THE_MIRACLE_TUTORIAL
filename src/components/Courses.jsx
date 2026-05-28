@@ -135,6 +135,77 @@ const courses = [
       </svg>
     )
   },
+  {
+    id: 'frontend',
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+      </svg>
+    ),
+    title: 'Frontend Development',
+    badge: 'New Course',
+    badgeIcon: '🌐',
+    badgeColor: 'pink',
+    desc: 'Master HTML, CSS, JavaScript and modern frameworks like React to build stunning, responsive web interfaces from scratch.',
+    duration: '4–6 Months',
+    features: ['HTML5 & CSS3 Mastery', 'React & JavaScript ES6+', 'Responsive UI Design'],
+    color: '#db2777',
+    bgIcon: (
+      <svg className="course-card__bg-icon" viewBox="0 0 100 100" opacity="0.05">
+        <polyline points="60 70 80 50 60 30" stroke="currentColor" strokeWidth="2" fill="none"/>
+        <polyline points="40 30 20 50 40 70" stroke="currentColor" strokeWidth="2" fill="none"/>
+      </svg>
+    )
+  },
+  {
+    id: 'backend',
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+        <line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/>
+      </svg>
+    ),
+    title: 'Backend Development',
+    badge: 'New Course',
+    badgeIcon: '⚙️',
+    badgeColor: 'indigo',
+    desc: 'Learn Node.js, Express, databases and API development to build powerful, scalable server-side applications.',
+    duration: '4–6 Months',
+    features: ['Node.js & Express.js', 'REST APIs & Databases', 'Authentication & Security'],
+    color: '#4338ca',
+    bgIcon: (
+      <svg className="course-card__bg-icon" viewBox="0 0 100 100" opacity="0.05">
+        <rect x="20" y="20" width="60" height="25" rx="4" stroke="currentColor" strokeWidth="1" fill="none"/>
+        <rect x="20" y="55" width="60" height="25" rx="4" stroke="currentColor" strokeWidth="1" fill="none"/>
+        <circle cx="30" cy="32" r="3" fill="currentColor"/><circle cx="30" cy="67" r="3" fill="currentColor"/>
+      </svg>
+    )
+  },
+  {
+    id: 'fullstack',
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+      </svg>
+    ),
+    title: 'Fullstack Development',
+    badge: 'All-in-One',
+    badgeIcon: '🚀',
+    badgeColor: 'rose',
+    desc: 'The complete web development journey — frontend, backend and deployment. Build and launch real-world projects end-to-end.',
+    duration: '8–12 Months',
+    features: ['Full MERN Stack', 'Project-based Learning', 'Deployment & DevOps Basics'],
+    color: '#0891b2',
+    bgIcon: (
+      <svg className="course-card__bg-icon" viewBox="0 0 100 100" opacity="0.05">
+        <rect x="10" y="10" width="35" height="35" rx="4" stroke="currentColor" strokeWidth="1" fill="none"/>
+        <rect x="55" y="10" width="35" height="35" rx="4" stroke="currentColor" strokeWidth="1" fill="none"/>
+        <rect x="30" y="55" width="40" height="35" rx="4" stroke="currentColor" strokeWidth="1" fill="none"/>
+        <line x1="27" y1="45" x2="45" y2="55" stroke="currentColor" strokeWidth="1"/>
+        <line x1="73" y1="45" x2="55" y2="55" stroke="currentColor" strokeWidth="1"/>
+      </svg>
+    )
+  },
 ];
 
 const badgeColors = {
@@ -144,6 +215,9 @@ const badgeColors = {
   purple: { bg: 'rgba(124,58,237,0.15)',   color: '#7c3aed' },
   orange: { bg: 'rgba(234,88,12,0.15)',    color: '#ea580c' },
   teal:   { bg: 'rgba(13,148,136,0.15)',   color: '#0d9488' },
+  pink:   { bg: 'rgba(219,39,119,0.15)',   color: '#db2777' },
+  indigo: { bg: 'rgba(67,56,202,0.15)',    color: '#4338ca' },
+  rose:   { bg: 'rgba(8,145,178,0.15)',    color: '#0891b2' },
 };
 
 export default function Courses() {

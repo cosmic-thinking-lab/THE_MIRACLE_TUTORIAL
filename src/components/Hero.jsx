@@ -83,26 +83,52 @@ export default function Hero() {
           <strong> Foundation Courses</strong>
         </p>
 
-        {/* CTA Buttons */}
-        <div className="hero__actions animate-fadeInUp delay-4">
-          <button className="btn btn-primary hero-btn" onClick={() => scrollTo('courses')}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-            </svg>
-            Explore Courses
-          </button>
-          <button className="btn btn-outline hero-btn" onClick={() => scrollTo('contact')}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.5 19.79 19.79 0 01.22 5.18 2 2 0 012.18 3h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 10.09a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0121 16.92z"/>
-            </svg>
-            Contact Us
-          </button>
-          <button className="btn btn-outline hero-btn" onClick={() => scrollTo('about')}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
-            </svg>
-            About Us
-          </button>
+
+
+
+        {/* New Courses Launched */}
+        <div className="hero__new-courses animate-fadeInUp delay-4b">
+          <div className="hero__new-courses-label">
+            <div className="label-line" />
+            <span>🚀 NEW COURSES LAUNCHED</span>
+            <div className="label-line" />
+          </div>
+          <div className="hero__course-cards">
+            <div className="hero-course-card" style={{'--hcc-color': '#db2777'}}>
+              <div className="hero-course-card__icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <div className="hero-course-card__info">
+                <h4>FRONTEND <span>DEVELOPMENT</span></h4>
+                <p>HTML • CSS • JavaScript</p>
+              </div>
+            </div>
+            <div className="hero-course-card" style={{'--hcc-color': '#4338ca'}}>
+              <div className="hero-course-card__icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                  <line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/>
+                </svg>
+              </div>
+              <div className="hero-course-card__info">
+                <h4>BACKEND <span>DEVELOPMENT</span></h4>
+                <p>Node.js • Express • DB • APIs</p>
+              </div>
+            </div>
+            <div className="hero-course-card" style={{'--hcc-color': '#0891b2'}}>
+              <div className="hero-course-card__icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+                </svg>
+              </div>
+              <div className="hero-course-card__info">
+                <h4>FULLSTACK <span>DEVELOPMENT</span></h4>
+                <p>Frontend • Backend • Database</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Stats */}
