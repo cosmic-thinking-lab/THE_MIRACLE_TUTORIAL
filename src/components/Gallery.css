@@ -246,6 +246,83 @@
   transform: translateY(-2px);
 }
 
+/* =========================================
+   HORIZONTAL SCROLL SECTION
+   ========================================= */
+.gallery__horizontal-scroll {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  padding: 10px 0;
+}
+
+.horizontal-scroll-container {
+  overflow: hidden;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.horizontal-scroll-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: scrollTrack 25s linear infinite;
+}
+
+.horizontal-scroll-container:hover .horizontal-scroll-track {
+  animation-play-state: paused;
+}
+
+@keyframes scrollTrack {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 12px)); }
+}
+
+.horizontal-scroll-item {
+  flex: 0 0 auto;
+  width: 85vw;
+  max-width: 400px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .horizontal-scroll-item {
+    width: 45vw;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .horizontal-scroll-item {
+    width: 35vw;
+    max-width: 500px;
+  }
+}
+
+.horizontal-scroll-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.horizontal-scroll-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.horizontal-scroll-item:hover img {
+  transform: scale(1.05);
+}
+
 /* ========= RESPONSIVE ========= */
 @media (max-width: 1024px) {
   .gallery__grid { grid-template-columns: repeat(2, 1fr); }

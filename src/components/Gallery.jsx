@@ -6,6 +6,7 @@ const categories = [
   { id: 'support', label: 'Support Services', icon: '🎧' },
   { id: 'policies', label: 'Coaching Policies', icon: '🛡️' },
   { id: 'campus', label: 'Campus Life', icon: '🏫' },
+  { id: 'community', label: 'Our Academic Community', icon: '🎓' },
   { id: 'achievements', label: 'Achievements', icon: '🏆' },
 ];
 
@@ -122,6 +123,37 @@ export default function Gallery() {
               {galleryItems.filter(item => item.category === 'policies').map((item) => (
                 <GalleryCard key={item.id} item={item} />
               ))}
+            </div>
+          </div>
+
+          {/* Academic Community Section */}
+          <div className="gallery__category-section" style={{ marginTop: '60px' }}>
+            <div className="gallery__sub-header reveal">
+              <div className="sub-header__title">
+                <span className="sub-icon">🎓</span>
+                <h3>OUR ACADEMIC COMMUNITY</h3>
+                <div className="header-line" />
+              </div>
+              <p>Meet our bright students, dedicated faculty, and the vibrant life at our campus.</p>
+            </div>
+            
+            <div className="gallery__horizontal-scroll reveal">
+              <div className="horizontal-scroll-container">
+                <div className="horizontal-scroll-track">
+                  {/* Original Items */}
+                  {[1, 2, 3, 4, 5].map((num) => (
+                    <div key={`orig-${num}`} className="horizontal-scroll-item">
+                      <img src={`/community/community-${num}.jpg`} alt={`Community ${num}`} loading="lazy" />
+                    </div>
+                  ))}
+                  {/* Duplicated Items for Infinite Scroll */}
+                  {[1, 2, 3, 4, 5].map((num) => (
+                    <div key={`dup-${num}`} className="horizontal-scroll-item">
+                      <img src={`/community/community-${num}.jpg`} alt={`Community ${num}`} loading="lazy" />
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
